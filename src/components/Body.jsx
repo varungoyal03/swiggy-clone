@@ -5,6 +5,7 @@ import { SWIGGY_API } from "../utils/constanst";
 import Shimmer from "./shimmer";
 import { Link } from "react-router-dom";
 import  useOnlineStatus from "../utils/useOnlineStatus";
+import { resdata } from "../utils/resdata";
 
 const Body = () => {
   const [listOfRes, setlistOfRes] = useState([]);
@@ -18,11 +19,13 @@ console.log('BODY RENDERED')
 
 
   const fetchdata=async ()=>{
-    const data= await fetch(SWIGGY_API);
-    const json = await data.json();
+    // const data= await fetch(SWIGGY_API);
+    // const json = await data.json();
 
-    setlistOfRes(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-    setModifiedList(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+    // setlistOfRes(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+    // setModifiedList(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+    setlistOfRes(resdata)
+    setModifiedList(resdata);
 
 
   }
