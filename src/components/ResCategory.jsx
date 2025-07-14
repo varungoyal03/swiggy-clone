@@ -1,5 +1,5 @@
 import { useState } from "react"
-import Item from "./item"
+import Item from "./Item"
 
 const ResCategory=({data,showIndex,setShowIndex})=>{
 
