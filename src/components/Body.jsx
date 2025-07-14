@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 // import { resdata } from "../utils/resdata";
 import Card, { withPromotedLabel } from "./Card";
 import { SWIGGY_API } from "../utils/constanst";
-import Shimmer from "./shimmer";
+import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import  useOnlineStatus from "../utils/useOnlineStatus";
 import { resdata } from "../utils/resdata";
