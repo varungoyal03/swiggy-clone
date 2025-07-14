@@ -1,0 +1,18 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color:seashell;  
+  height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: centre;
+  align-items: centre;
+}
+
+.header{
+    padding: 16px 10%;
+}
